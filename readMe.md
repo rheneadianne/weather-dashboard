@@ -12,7 +12,7 @@ Simple weather dashboard created using [OpenWeather APO](https://openweathermap.
 https://rheneadianne.github.io/weather-dashboard/
 
 ## Images
-![Weather Dashboard Gif]()
+![Weather Dashboard Gif](./assets/img/Weather_Dashboard.gif)
 
 ## Contribution
 Made with ❤️ by Rhenea 
