@@ -1,7 +1,7 @@
 # Weather Dashboard
 
 ## Description
-Simple weather dashboard created using [OpenWeather APO](https://openweathermap.org/ "OpenWeather API Homepage")
+Simple weather dashboard created using [OpenWeather API](https://openweathermap.org/ "OpenWeather API Homepage")
 
 ## Built With
 - Javascript: Vanilla, Jquery, Moment.Js
