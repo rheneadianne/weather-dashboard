@@ -87,7 +87,6 @@ const printCities = () => { // prints all previously searched cities from local 
 }
 
 printCities()
-
 $(".citySearchbtn").click(function () { // when button is clicked
     fiveDayForecastBox.innerHTML = "" // 5 day forecast container is cleared
     currentWeather(citySearched.value) // then currentWeather function is ran with input entered by user
@@ -100,12 +99,13 @@ $(".citySearchbtn").click(function () { // when button is clicked
         savedCities.innerHTML += savedCitiesArray[savedCitiesArray.length - 1] // prints entered city
         window.localStorage.setItem("savedCitiesStorage", JSON.stringify(savedCitiesArray)); // adds entered city to local storage
     }
-
-    $(".savedCity").click(function(){ // user can created cities to search weather
-        fiveDayForecastBox.innerHTML = ""
-        currentWeather(this.value)
-    })
 })
+
+$(".savedCity").click(function(){ // user can created cities to search weather
+    fiveDayForecastBox.innerHTML = ""
+    currentWeather(this.value)
+})
+
 
 $("#clear").click(function(){
     localStorage.clear(); // clear local storage
