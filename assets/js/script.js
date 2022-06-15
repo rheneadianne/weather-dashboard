@@ -99,6 +99,10 @@ $(".citySearchbtn").click(function () { // when button is clicked
         savedCities.innerHTML += savedCitiesArray[savedCitiesArray.length - 1] // prints entered city
         window.localStorage.setItem("savedCitiesStorage", JSON.stringify(savedCitiesArray)); // adds entered city to local storage
     }
+    $(".savedCity").click(function(){ // user can created cities to search weather
+        fiveDayForecastBox.innerHTML = ""
+        currentWeather(this.value)
+    })
 })
 
 $(".savedCity").click(function(){ // user can created cities to search weather
