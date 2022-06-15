@@ -3,7 +3,7 @@ const fiveDayForecastBox = document.querySelector(".fiveDayForecastBox") // 5 da
 
 // Calling Server-side API to Generate Weather Information
 const currentWeather = (cityName = "Toronto") => { //defaults to Toronto 
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${key}`) // Geolocator API that determines latitude and longtitude based on entered city name
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${key}`) // Geolocator API that determines latitude and longtitude based on entered city name
         .then((response) => {
             return response.json();
         })
