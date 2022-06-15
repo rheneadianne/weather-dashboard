@@ -21,7 +21,7 @@ const currentWeather = (cityName = "Toronto") => { //defaults to Toronto
                     return response.json();
                 })
                 .then((data) => {
-                    const weatherImg = `<img src="http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png"/>` // current weather icon
+                    const weatherImg = `<img src="https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}.png"/>` // current weather icon
                     const weatherDescription = data.list[0].weather[0].description // short description of current weather
                     cityDetailsTitle.innerHTML = `${weatherImg} ${weatherTitle} <i><small>${weatherDescription}</small</i>` // adds weather icon and short description of City title container
                     const cityDetailsList = `
@@ -53,7 +53,7 @@ const currentWeather = (cityName = "Toronto") => { //defaults to Toronto
                                 const eachDayForcast = // list of weather details for the next 5 days
                                     `<div class="col-9 col-md-4 col-xl-2 col-lg-4 bg-dark m-2 p-1 text-white">
                                         <ul class="list-unstyled p-2 d-flex flex-column">
-                                            <li><img src="http://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}.png"/><i>${data.daily[i].weather[0].description}</i></li>
+                                            <li><img src="https://openweathermap.org/img/wn/${data.daily[i].weather[0].icon}.png"/><i>${data.daily[i].weather[0].description}</i></li>
                                             <li><h3>${moment.unix(data.daily[i].dt).format("YYYY-MMM-DD")}</h3></li>
                                             <li>Min Temperature: ${data.daily[i].temp.min}°C</li>
                                             <li>Max Temperature: ${data.daily[i].temp.max}°C</li>
